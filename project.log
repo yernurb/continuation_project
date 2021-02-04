@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.11.8)  4 FEB 2021 16:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.11.8)  4 FEB 2021 23:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -265,99 +265,48 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-/home/yernur/Projects/continuation_project/project.tex:42: Missing } inserted.
-<inserted text> 
-                }
-l.42 \end{center}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 81.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 82.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 81.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 82.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 91.
-
-
-LaTeX Warning: Reference `tab:example' on page 2 undefined on input line 99.
-
-
-LaTeX Warning: File `Figures/Fig1.jpg' not found on input line 106.
-
-
-/home/yernur/Projects/continuation_project/project.tex:106: Package pdftex.def Error: File `Figures/Fig1.jpg' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.106 ...degraphics[width=8.2cm]{Figures/Fig1.jpg}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 106.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-
-LaTeX Warning: Reference `fig:example' on page 2 undefined on input line 111.
-
-[2]
-
-LaTeX Warning: File `Figures/Fig2.pdf' not found on input line 121.
-
-
-/home/yernur/Projects/continuation_project/project.tex:121: Package pdftex.def Error: File `Figures/Fig2.pdf' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.121 ...degraphics[scale = .80]{Figures/Fig2.pdf}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[3] [4] [5]
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 153.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 92.
+<Figures/Fig1.jpg, id=8, 1023.825pt x 380.42125pt>
+File: Figures/Fig1.jpg Graphic file (type jpg)
+<use Figures/Fig1.jpg>
+Package pdftex.def Info: Figures/Fig1.jpg  used on input line 106.
+(pdftex.def)             Requested size: 233.3125pt x 86.68817pt.
+ [2 </home/yernur/Projects/continuation_project/Figures/Fig1.jpg>]
+<Figures/Fig2.pdf, id=13, 481.8pt x 105.39375pt>
+File: Figures/Fig2.pdf Graphic file (type pdf)
+<use Figures/Fig2.pdf>
+Package pdftex.def Info: Figures/Fig2.pdf  used on input line 120.
+(pdftex.def)             Requested size: 385.4405pt x 84.3151pt.
+ [3 </home/yernur/Projects/continuation_project/Figures/Fig2.pdf>] [4]
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 152.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
-) [6] [7]
-No file project.bbl.
-(/home/yernur/Projects/continuation_project/project.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+) [5] [6] (/home/yernur/Projects/continuation_project/project.bbl) [7] (/home/yernur/Projects/continuation_project/project.aux) ) 
 Here is how much of TeX's memory you used:
- 4572 strings out of 480906
- 65584 string characters out of 5910772
- 308878 words of memory out of 5000000
- 20084 multiletter control sequences out of 15000+600000
- 571021 words of font info for 79 fonts, out of 8000000 for 9000
+ 4508 strings out of 480906
+ 64814 string characters out of 5910772
+ 308970 words of memory out of 5000000
+ 20038 multiletter control sequences out of 15000+600000
+ 569246 words of font info for 76 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 38i,11n,43p,1156b,307s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on /home/yernur/Projects/continuation_project/project.pdf (7 pages, 45323 bytes).
+ 38i,11n,43p,1121b,305s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on /home/yernur/Projects/continuation_project/project.pdf (7 pages, 371318 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 31 compressed objects within 1 object stream
+ 103 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
