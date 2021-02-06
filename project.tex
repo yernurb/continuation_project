@@ -61,60 +61,54 @@ Clear  and  comprehensible  presentation  of  the  project,  short  characteriza
 
 \section*{A. Summary of the research topic}
 
-\begin{description} % For subheadings within a section, this template uses the {description} environment, it is not obtrusively large like a \subsection; and facilitates a brief optional subtitle; and it will wrap around figures and tables; it also has a decent amount of whitespace above/below which is less than for a section heading
-	\item[A.1. Instructions.]{Optional subtitle}
-\end{description}
+The model we consider is a granular gas with polydisperse size-distribution 
+of constituents in a sheared environment. In our further discussion, we will be 
+using the term \emph{granular temperature} or simply \emph{temperature}, 
+referring to the mean kinetic energy of constituents, and not molecular heat energy.
 
-Explain the importance of the problem or critical barrier to progress in the field that the proposed project addresses 
-\cite{Spahn2011}.
+Unlike molecular gases, a granular gas is always subject to dissipation of inner 
+energy or temperature decay over time [citations]. Even more interesting phenomena
+happens when granular gas consists of species with different masses. In this case, 
+due to non-equal partitioning of energy, each species attain unique granular 
+temperatures [citations] (\cite{Brilliantov2013,Spahn2011}). 
+The time evolution of these temperatures is in the next form:
+\begin{equation}
+	\frac{dT_i}{dt} \propto H_i -A_iT_i+\sum_{k}B_{ik}(T_i-T_k)\;,
+\end{equation}
+where $T_i$ and $T_k$ are granular temperatures, $A_i>0$ is the parameter describing 
+dissipation due to collisions, which depends on size distribution function, collision 
+frequency and restitution. The parameter $B_{ik}=B_{ki}>0$ describes the inter-species 
+heat flow. This is the main reason why species tend to have different temperatures. 
+$H_i$ is a certain external heating function. If one introduces an external energy pump 
+into the system, the temperatures of species don't reach zero, but attain certain 
+stationary and still unique values, balancing the outer heating [citations]. 
 
-Explain how the proposed project will improve scientific knowledge, technical capability, and/or clinical practice in one or more broad fields.
+One caveat of these heating models is that they are all artificial. Our goal 
+is to investigate the model with a more realistic heating term, the gravitational 
+shear heating in planetary disks. This heating is in the next form:
+\begin{equation}
+	H_i \propto \nu_i\Omega^2\;,
+\end{equation}
+where $\Omega$ is the mean orbital frequency around the considered location of the system,
+and $\nu_i$ is the shear viscosity term. In the case of planetary rings, the viscosity
+term is split into \emph{local} and \emph{non-local} parts $\nu=\nu_l+\nu_{nl}$ [citations].
+However, these terms are given only for the mono-disperse case. In the case of a gas 
+with different species, we need to know the viscosity terms for each species. 
+This is the first goal of our project, to obtain the kinetic transport coefficients
+for each species from the microscopic level of description. 
+By this we mean kinetic description of the system, given a velocity distribution 
+function $f$, its time evolution obeys:
+\begin{equation}
+	\frac{\partial f_i}{\partial t}+\vec{v}\cdot\frac{\partial f_i}{\partial\vec{r}}-
+	-\frac{1}{m_i}\frac{\partial U}{\partial\vec{r}}\frac{\partial f_i}{\partial\vec{v}}=
+	\sum_k\eta_kI(f_i,f_k)\;,
+\end{equation}
+where $I(f_i, f_k)$ is the collision integral and $\eta$ is the size distribution 
+function.
 
-Describe how the concepts, methods, technologies, treatments, services, or preventative interventions that drive this field will be changed if the proposed aims are achieved.
-
-\begin{description}
-	\item[A.2. Subheading.]{}
-\end{description}
-
-\begin{wraptable}{l}{5.5cm}\label{tab:example} % Example table with text wrapping around it
-	\caption{Example Table}
-	\begin{center}
-		\begin{tabular}{l l r}
-			\toprule
-			\multicolumn{1}{c}{City} & {N\textsuperscript{a}} & {\%Silly}\\
-			\midrule
-			San Diego & 289 & 41\%\\
-			Seattle & 262 & 32\%\\
-			Galveston & 261 & 15\%\\
-			St Louis & 269 & 7\%\\
-			New York & 271 & 4\%\\
-			Baltimore & 231 & 2\%\\
-			\emph{Total} & 1,586 & 21\%\\
-			\hline 
-		\end{tabular}\\
-		\footnotesize\textsuperscript{a}{All participants clowns.}
-	\end{center}	
-\end{wraptable}
-
-Referencing a table using it's label: Table. Maecenas consectetur metus at tellus finibus condimentum. Proin arcu lectus, ultrices non tincidunt et, tincidunt ut quam. Integer luctus posuere est, non maximus ante dignissim quis. Nunc a cursus erat. Curabitur suscipit nibh in tincidunt sagittis. Nam malesuada vestibulum quam id gravida. Proin ut dapibus velit. Vestibulum eget quam quis ipsum semper convallis. Duis consectetur nibh ac diam dignissim, id condimentum enim dictum. Nam aliquet ligula eu magna pellentesque, nec sagittis leo lobortis. Aenean tincidunt dignissim egestas. Morbi efficitur risus ante, id tincidunt odio pulvinar vitae. Proin ut dapibus velit. Vestibulum eget quam quis ipsum semper convallis. Duis consectetur nibh ac diam dignissim, id condimentum enim dictum.
-
-Curabitur tempus hendrerit nulla. Donec faucibus lobortis nibh pharetra sagittis. Sed magna sem, posuere eget sem vitae, finibus consequat libero. Cras aliquet sagittis erat ut semper. Aenean vel enim ipsum. Fusce ut felis at eros sagittis bibendum mollis lobortis libero. Donec laoreet nisl vel risus lacinia elementum non nec lacus. Nullam luctus, nulla volutpat ultricies ultrices, quam massa placerat augue, ut fringilla urna lectus nec nibh. Vestibulum efficitur condimentum orci a semper. Pellentesque ut metus pretium lacus maximus semper. Sed tellus augue, consectetur rhoncus eleifend vel, imperdiet nec turpis. Nulla ligula ante, malesuada quis orci a, ultricies blandit elit.
-
-In malesuada ullamcorper urna, sed dapibus diam sollicitudin non. Donec elit odio, accumsan ac nisl a, tempor imperdiet eros. Donec porta tortor eu risus consequat, a pharetra tortor tristique. Morbi sit amet laoreet erat. Morbi et luctus diam, quis porta ipsum. Quisque libero dolor, suscipit id facilisis eget, sodales volutpat dolor. Nullam vulputate interdum aliquam. Mauris id convallis erat, ut vehicula neque. Sed auctor nibh et elit fringilla, nec ultricies dui sollicitudin.
-
-\begin{wrapfigure}{r}{8.5cm}\label{fig:example} % Example figure with text wrapping around it
-	\includegraphics[width=8.2cm]{Figures/Fig1.jpg}
-	\caption{\footnotesize Example wrapped figure. (A) Impressive microscopy image. (B) Impressive data.}	
-\end{wrapfigure}
-
-Referencing a figure using it's label: Figure. Proin lobortis efficitur dictum. Pellentesque vitae pharetra eros, quis dignissim magna. Sed tellus leo, semper non vestibulum vel, tincidunt eu mi. Aenean pretium ut velit sed facilisis. Ut placerat urna facilisis dolor suscipit vehicula. Ut ut auctor nunc. Nulla non massa eros. Proin rhoncus arcu odio, eu lobortis metus sollicitudin eu. Duis maximus ex dui, id bibendum diam dignissim id. Aliquam quis lorem lorem. Phasellus sagittis aliquet dolor, vulputate cursus dolor convallis vel. Suspendisse eu tellus feugiat, bibendum lectus quis, fermentum nunc. Nunc euismod condimentum magna nec bibendum. Curabitur elementum nibh eu sem cursus, eu aliquam leo rutrum. Sed bibendum augue sit amet pharetra ullamcorper. Aenean congue sit amet tortor vitae feugiat. Vestibulum vestibulum luctus metus venenatis facilisis. Suspendisse iaculis augue at vehicula ornare. Sed vel eros ut velit fermentum porttitor sed sed massa. Fusce venenatis, metus a rutrum sagittis, enim ex maximus velit, id semper nisi velit eu purus.
-
-\begin{description}
-	\item[A.3. Another subheading:]{optional subtitle.}
-\end{description}
-
-In congue risus leo, in gravida enim viverra id. Donec eros mauris, bibendum vel dui at, tempor commodo augue. In vel lobortis lacus. Nam ornare ullamcorper mauris vel molestie. Maecenas vehicula ornare turpis, vitae fringilla orci consectetur vel. Nam pulvinar justo nec neque egestas tristique. Donec ac dolor at libero congue varius sed vitae lectus. Donec et tristique nulla, sit amet scelerisque orci. Maecenas a vestibulum lectus, vitae gravida nulla. Proin eget volutpat orci. Morbi eu aliquet turpis. Vivamus molestie urna quis tempor tristique. Proin hendrerit sem nec tempor sollicitudin.
-
+In order to test the theoretical results, we have developed a molecular dynamics (MD) 
+code, simulating granular particles of different sizes in a Hill's box. 
+\emph{Here some $\ln T$ over $\ln t$ simulation results graph Fig.~\ref{fig2}}
 \begin{figure}[b] % Figure at bottom of the page ([b] argument, could be "t" for top or "h" for here)
 	\centering
 	\includegraphics[scale = .80]{Figures/Fig2.pdf}
@@ -122,17 +116,23 @@ In congue risus leo, in gravida enim viverra id. Donec eros mauris, bibendum vel
 	\label{fig2}
 \end{figure}
 
-Fusce eleifend porttitor arcu, id accumsan elit pharetra eget. Mauris luctus velit sit amet est sodales rhoncus. Donec cursus suscipit justo, sed tristique ipsum fermentum nec. Ut tortor ex, ullamcorper varius congue in, efficitur a tellus. Vivamus ut rutrum nisi. Phasellus sit amet enim efficitur, aliquam nulla id, lacinia mauris. Quisque viverra libero ac magna maximus efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum mollis eros in tellus fermentum, vitae tristique justo finibus. Sed quis vehicula nibh. Etiam nulla justo, pellentesque id sapien at, semper aliquam arcu. Integer at commodo arcu. Quisque dapibus ut lacus eget vulputate.
+Next, we would like to address the reasons of size distribution in Saturn's rings. 
+From experimental evidents, it is well known that the size distribution obeys a power
+law with a cutoff at larger sized constituents [citations]. There are several attempts
+to model this phenomenon [citations]. All of them assume a certain interplay between
+two driving processes, aggregation or coagulation process, when particles merge in order 
+to produce a single larger particle, and fragmentation process, when particles
+fracture after collision producing smaller constituents. A natural step for us would be 
+to analyze the kinetic equations describing the behavior of the system with inclusion 
+of aggregation and fragmentation processes.
 
-Vestibulum sodales orci a nisi interdum tristique. In dictum vehicula dui, eget bibendum purus elementum eu. Pellentesque lobortis mattis mauris, non feugiat dolor vulputate a. Cras porttitor dapibus lacus at pulvinar. Praesent eu nunc et libero porttitor malesuada tempus quis massa. Aenean cursus ipsum a velit ultricies sagittis. Sed non leo ullamcorper, suscipit massa ut, pulvinar erat. Aliquam erat volutpat. Nulla non lacus vitae mi placerat tincidunt et ac diam. Aliquam tincidunt augue sem, ut vestibulum est volutpat eget. Suspendisse potenti. Integer condimentum, risus nec maximus elementum, lacus purus porta arcu, at ultrices diam nisl eget urna. Curabitur sollicitudin diam quis sollicitudin varius. Ut porta erat ornare laoreet euismod. In tincidunt purus dui, nec egestas dui convallis non. In vestibulum ipsum in dictum scelerisque.
-
-\begin{description}
-	\item[A.4. Yet another subheading.]{}
-\end{description}
-
-Aenean feugiat pellentesque venenatis. Sed faucibus tristique tortor vel ultrices. Donec consequat tellus sapien. Nam bibendum urna mauris, eget sagittis justo gravida vel. Mauris nisi lacus, malesuada sit amet neque ut, venenatis tempor orci. Curabitur feugiat sagittis molestie. Duis euismod arcu vitae quam scelerisque facilisis. Praesent volutpat eleifend tortor, in malesuada dui egestas id. Donec finibus ac risus sed pellentesque. Donec malesuada non magna nec feugiat. Mauris eget nibh nec orci congue porttitor vitae eu erat. Sed commodo ipsum ipsum, in elementum neque gravida euismod. Cras mi lacus, pulvinar ut sapien ut, rutrum sagittis dui. Donec non est a metus varius finibus. Pellentesque rutrum pellentesque ligula, vitae accumsan nulla hendrerit ut.
-
-In mi mauris, finibus non faucibus non, imperdiet nec leo. In erat arcu, tincidunt nec aliquam et, volutpat eget nisl. Vivamus id eros scelerisque est condimentum condimentum at at ligula. Proin blandit sapien ac bibendum faucibus. Nunc sem elit, blandit in lectus vitae, lacinia hendrerit risus. Donec efficitur elementum massa, eget interdum nunc porttitor sed. Aenean porttitor gravida nibh, vel bibendum tellus. Nunc fermentum lobortis nunc. Cras aliquet odio mauris, eget lobortis metus lacinia sit amet. Maecenas id elit eu orci ornare ultricies. Sed consequat turpis id accumsan malesuada. Fusce varius imperdiet ex, vel sodales purus scelerisque id. Morbi ut tellus interdum, laoreet leo non, dignissim odio. Nunc vel quam diam. Sed eu tortor in dolor mattis rhoncus.
+Such an interplay and balance of three different processes, one being separation of 
+temperatures of species, second being the gravitational heating and third 
+being the recombination of particles which lead to dynamical change of size distribution,
+is already quite interesting. Hence, an external influence, such as periodic 
+driving force acting upon the system should lead to various fascinating phenomena.
+In planetary systems, such periodic driving forces are resonances with the moons of the 
+planet.
 
 %----------------------------------------------------------------------------------------
 %	Table of contents and outline of the thesis with an overview of accomplished (sub-) chapter
@@ -162,7 +162,7 @@ Please submit your table of contents /outline of your thesis. Please characteriz
 \newpage
 
 \bibliography{project} % Use the NIHGrant.bib file for the reference list, replace with your own
-\bibliographystyle{abbrv} % Use the custom nihunsrt bibliography style included with the template
+\bibliographystyle{nihunsrt} % Use the custom nihunsrt bibliography style included with the template
 
 %----------------------------------------------------------------------------------------
 
