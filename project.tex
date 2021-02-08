@@ -62,15 +62,15 @@ Clear  and  comprehensible  presentation  of  the  project,  short  characteriza
 \section*{A. Summary of the research topic}
 
 The model we consider is a granular gas with polydisperse size-distribution 
-of constituents in a sheared environment. In our further discussion, we will be 
+of constituents in a sheared environment. In our further discussion, we will be
 using the term \emph{granular temperature} or simply \emph{temperature}, 
 referring to the mean kinetic energy of constituents, and not molecular heat energy.
 
 Unlike molecular gases, a granular gas is always subject to dissipation of inner 
-energy or temperature decay over time [citations]. Even more interesting phenomena
-happens when granular gas consists of species with different masses. In this case, 
+energy or temperature decay over time \cite{Haff1983,Brilliantov2004}. Even more interesting phenomena can be
+observed when granular gas consists of species with different masses. In this case, 
 due to non-equal partitioning of energy, each species attain unique granular 
-temperatures [citations] (\cite{Brilliantov2013,Spahn2011}). 
+temperatures \cite{Garzo2007c,Osinsky2020}. 
 The time evolution of these temperatures is in the next form:
 \begin{equation}
 	\frac{dT_i}{dt} \propto H_i -A_iT_i+\sum_{k}B_{ik}(T_i-T_k)\;,
@@ -81,7 +81,7 @@ frequency and restitution. The parameter $B_{ik}=B_{ki}>0$ describes the inter-s
 heat flow. This is the main reason why species tend to have different temperatures. 
 $H_i$ is a certain external heating function. If one introduces an external energy pump 
 into the system, the temperatures of species don't reach zero, but attain certain 
-stationary and still unique values, balancing the outer heating [citations]. 
+stationary and still unique values, balancing the outer heating \cite{Bodrova2014}. 
 
 One caveat of these heating models is that they are all artificial. Our goal 
 is to investigate the model with a more realistic heating term, the gravitational 
@@ -91,7 +91,7 @@ shear heating in planetary disks. This heating is in the next form:
 \end{equation}
 where $\Omega$ is the mean orbital frequency around the considered location of the system,
 and $\nu_i$ is the shear viscosity term. In the case of planetary rings, the viscosity
-term is split into \emph{local} and \emph{non-local} parts $\nu=\nu_l+\nu_{nl}$ [citations].
+term is split into \emph{local} and \emph{non-local} parts $\nu=\nu_l+\nu_{nl}$ \cite{Seiss2011,Spahn2006,Stewart1984}.
 However, these terms are given only for the mono-disperse case. In the case of a gas 
 with different species, we need to know the viscosity terms for each species. 
 This is the first goal of our project, to obtain the kinetic transport coefficients
@@ -109,19 +109,19 @@ function.
 In order to test the theoretical results, we have developed a molecular dynamics (MD) 
 code, simulating granular particles of different sizes in a Hill's box. 
 \emph{Here some $\ln T$ over $\ln t$ simulation results graph Fig.~\ref{fig2}}
-\begin{figure}[b] % Figure at bottom of the page ([b] argument, could be "t" for top or "h" for here)
+\begin{figure}[h] % Figure at bottom of the page ([b] argument, could be "t" for top or "h" for here)
 	\centering
-	\includegraphics[scale = .80]{Figures/Fig2.pdf}
-	\caption{\footnotesize Big Figure legend Big Figure legend Big Figure legend Big Figure legend Big Figure legend Big Figure legend Big Figure legend Big Figure legend Big Figure legend.}
+	\includegraphics[scale = .80]{Figures/energy_evo.png}
+	\caption{\footnotesize This is only an example plot. Should be replaced by my new simulation results}
 	\label{fig2}
 \end{figure}
 
-Next, we would like to address the reasons of size distribution in Saturn's rings. 
-From experimental evidents, it is well known that the size distribution obeys a power
-law with a cutoff at larger sized constituents [citations]. There are several attempts
-to model this phenomenon [citations]. All of them assume a certain interplay between
-two driving processes, aggregation or coagulation process, when particles merge in order 
-to produce a single larger particle, and fragmentation process, when particles
+Next, we would like to address the reasons for size distribution in Saturn's rings. 
+From experimental evidence, we that the size distribution obeys a power
+law with a cut-off at the end [size-distribution tail original works]. There are several attempts
+to model this phenomenon \cite{Brilliantov2013,Spahn2011}. All of them assume a certain interplay between
+two driving processes, aggregation or coagulation process when particles merge, producing 
+larger particles, and fragmentation process, when particles
 fracture after collision producing smaller constituents. A natural step for us would be 
 to analyze the kinetic equations describing the behavior of the system with inclusion 
 of aggregation and fragmentation processes.

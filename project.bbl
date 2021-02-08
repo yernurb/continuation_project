@@ -1,4 +1,49 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{Haff1983}
+P.~K. Haff.
+\newblock {Grain flow as a fluid mechanical phenomenon}.
+\newblock {\em Journal of Fluid Mechanics}, 134:401--430, 1983.
+
+\bibitem{Brilliantov2004}
+N.~Brilliantov and T.~Poeschel.
+\newblock {\em {Kinetic Theory of Granular Gases}}.
+\newblock Oxford University Press, Oxford, 2004.
+
+\bibitem{Garzo2007c}
+V.~Garz{\'{o}}, J.~W. Dufty, and C.~M. Hrenya.
+\newblock {Enskog theory for polydisperse granular mixtures. I. Navier-Stokes
+  order transport}.
+\newblock {\em Physical Review E - Statistical, Nonlinear, and Soft Matter
+  Physics}, 76(3), 2007.
+
+\bibitem{Osinsky2020}
+A.~Osinsky, A.~S. Bodrova, and N.~V. Brilliantov.
+\newblock {Size-polydisperse dust in molecular gas : Energy equipartition
+  versus nonequipartition}.
+\newblock {\em Physical Review E - Statistical, Nonlinear, and Soft Matter
+  Physics}, 022903:37--39, 2020.
+
+\bibitem{Bodrova2014}
+A.~Bodrova, D.~Levchenko, and N.~Brilliantov.
+\newblock {Universality of temperature distribution in granular gas mixtures
+  with a steep particle size distribution}.
+\newblock {\em Epl}, 106(1), 2014.
+
+\bibitem{Seiss2011}
+M.~Sei{\ss} and F.~Spahn.
+\newblock {Hydrodynamics of Saturn's Dense Rings}.
+\newblock {\em Math.Model. Nat. Phenom.}, 6(4):191--218, 2011.
+
+\bibitem{Spahn2006}
+F.~Spahn and J.~Schmidt.
+\newblock {Hydrodynamic Description of Planetary Rings}.
+\newblock {\em GAMM-Mitt.}, 140(1):115 -- 140, 2006.
+
+\bibitem{Stewart1984}
+G.~R. Stewartt, D.~Lin, and P.~Bodenheimer.
+\newblock {Collision-Induced transport processes in planetary rings}.
+\newblock In {\em IAU Colloq. 75: Planetary Rings}, 1984.
 
 \bibitem{Brilliantov2013}
 N.~Brilliantov, P.~Krapivsky, A.~Bodrova, F.~Spahn, H.~Hayakawa, V.~Stadnichuk,
