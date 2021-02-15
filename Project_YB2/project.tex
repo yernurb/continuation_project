@@ -67,28 +67,30 @@ of theoretical physics}, chair Prof. Dr. Ralf Metzler, where room, working place
 
 Our work concerning cosmic granular gases (planetary rings) has been greatly inspired by the stunning results of the unique  
 \emph{Cassini}-mission to the giant-planet Saturn\footnote{Frank Spahn is a member (CoI) of the \emph{Cassini}-CDA (cosmic dust analyzer)
-\emph{Science} team since 1995.}. The occultation- (UVIS) and the imaging (ISS) experiments have spotted quite unexpected \emph{fine-scale} structures
-during the \emph{grande finale} phase of that gorgeous mission -- clustering structures which occur on the scale of the ring-aggregate sizes as an expression 
+\emph{Science} team since 1995.}. The occultation- (UVIS) and the imaging (ISS) experiments have spotted quite unexpected 
+\emph{fine-scale} structures during the \emph{grande finale} phase of that gorgeous mission -- 
+clustering structures which occur on the scale of the ring-aggregate sizes as an expression 
 of the non-equilibrium character of the huge granular gas disks.\\
 
 We plan to explain these observations with generalized kinetic Boltzmann-type equations addressing aggregation, fragmentation and 
-restitution \citep{spahn2004} as collisional results. The latter are quantified by visco-elastic adhering collision dynamics of granular icy aggregates 
-\citep{brilliantov2007a}.
+restitution \citep{spahn2004} as collisional results. The latter are quantified by visco-elastic adhering collision dynamics of 
+granular icy aggregates \citep{brilliantov2007a}.
 
-In a first step, the evolution of a homogeneous, unperturbed ring composed of aggregates with different masses ($k$ index) is analyzed with
-the zeroth'- and second order mean field-equations, i.e.  the particle number density $n_k (\vec r, t)$ and corresponding granular 
-temperatures $T_k (\vec r, t)$. For a given size(mass) distribution (DF) ~ $n_k  \propto k^{-\alpha}$, we have found mass ($k$) dependent  
-temperatures $T_k $ as a stationary expression for the non-equilibrium character of the sheared granular gas a planetary ring is made of.
+In a first step, the evolution of a homogeneous, unperturbed ring composed of aggregates with different masses ($k$ index) is 
+analyzed with the zeroth'- and second order mean field-equations, i.e.  the particle number density $n_k (\vec r, t)$ and 
+corresponding granular temperatures $T_k (\vec r, t)$. For a given size(mass) distribution (DF) ~ $n_k  \propto k^{-\alpha}$, 
+we have found mass ($k$) dependent temperatures $T_k $ as a stationary expression for the non-equilibrium character of the sheared 
+granular gas a planetary ring is made of.
 
- In order to investigate cluster formation under external excitations, the \emph{stability} of the steady state solutions will be analyzed against 
- gravitational (resonant) perturbations, i.e. we will aim at responses of the size distribution $n_k$ vs granular temperatures $T_k$ under 
- external driving.   
+In order to investigate cluster formation under external excitations, the \emph{stability} of the steady state solutions will 
+be analyzed against gravitational (resonant) perturbations, i.e. we will aim at responses of the size distribution $n_k$ vs 
+granular temperatures $T_k$ under external driving.
   
-    Furthermore, the generalized kinetic model allows to study the momentum and energy transports between different mass 
- classes of aggregates relevant for cluster processes and the establishment of vertical stratification.  The different mobilities 
- corresponding to ring aggregates of different masses may cause size(mass) segregation processes in a perturbed multi-disperse 
- ring. This may lead to a separation of regions containing larger aggregates from those composed of rather small grains -- effects 
- which are potentially suitable to describe small scale structural phenomena discovered by \emph{Cassini}.\\
+Furthermore, the generalized kinetic model allows to study the momentum and energy transports between different mass 
+classes of aggregates relevant for cluster processes and the establishment of vertical stratification.  The different mobilities 
+corresponding to ring aggregates of different masses may cause size(mass) segregation processes in a perturbed multi-disperse 
+ring. This may lead to a separation of regions containing larger aggregates from those composed of rather small grains -- effects 
+which are potentially suitable to describe small scale structural phenomena discovered by \emph{Cassini}.\\
  
  
  \begin{figure}[ht]
@@ -197,26 +199,49 @@ In the planned project, we will analyze the stability of that steady state under
 cluster formation, and thus, to complete the goals of my PhD-thesis!\\
 
 \subsection*{Scientific Objectives}
+Unlike molecular gases, a granular gas is always subject to collisional dissipation of inner 
+energy, hence temperature decay over time \citep{Haff1983, Brilliantov2004}. Even more interesting phenomena can be
+observed when granular gas consists of species with different masses. In this case, 
+due to non-equal partitioning of energy, each species attain unique granular
+temperatures \citep{Garzo2007c, Osinsky2020}. 
 
 The model we consider is a granular gas with polydisperse size-distribution 
-of constituents in a sheared environment. In a further discussion, we will be
-using the term \emph{granular temperature} or simply \emph{temperature}, 
-referring to the mean kinetic energy of constituents, and not molecular heat energy.
-
-Unlike molecular gases, a granular gas is always subject to collisional dissipation of inner 
-energy or temperature decay over time \cite{Haff1983,Brilliantov2004}. Even more interesting phenomena can be
-observed when granular gas consists of species with different masses. In this case, 
-due to non-equal partitioning of energy, each species attain unique granular 
-temperatures \cite{Garzo2007c,Osinsky2020}. 
-The time evolution of these temperatures is in the next form:
-\begin{equation}
-	\frac{dT_i}{dt} \propto H_i -A_iT_i+\sum_{k}B_{ik}(T_i-T_k)\;,
+of constituents in a sheared environment. We start our kinetic description of such a medium 
+with an introduction of a one-particle DFs $f_k(\vec{r}, \vec{v}, t)$ for each species $k$. Time evolution of such functions 
+obey Boltzmann-type kinetic equations \citep{Haff1983, Brilliantov2004}:
+\begin{equation}\label{eq:kinetic}
+	\frac{\partial f_k}{\partial t}+\vec{v}\cdot\frac{\partial f_k}{\partial\vec{r}}-
+	\frac{1}{m_k}\frac{\partial U}{\partial\vec{r}}\cdot\frac{\partial f_k}{\partial\vec{v}}=
+	\sum_i n_iI_c(f_k,f_i)\;,
 \end{equation}
-where $T_i$ and $T_k$ are granular temperatures, $A_i>0$ is the parameter describing 
+where $U(r)$ is the gravitational potential of the planet and $I_c(f_k, f_i)$ is the collision integral. Using these DFs we 
+can introduce macroscopic fields as corresponding velocity moments of DFs:
+\begin{equation}
+	\begin{split}
+		\rho_k(\vec{r}, t) &= m_k\int f_k(\vec{r}, \vec{v}, t)\,d\vec{v}\;,\\
+		\rho_k(\vec{r}, t)\vec{u}(\vec{r}, t) &= \int \vec{v}f_k(\vec{r}, \vec{v}, t)\,d\vec{v}\;,\\
+		T_k(\vec{r}, t) &= \frac{2}{3}\int \frac{m_k c^2}{2}f_k(\vec{r}, \vec{v}, t)\,d\vec{v}\;,
+	\end{split}
+\end{equation}
+where $\rho_k=m_kn_k$ is the mass density, $\vec{u}$ is the mean velocity and $\vec{c}=\vec{v}-\vec{u}$ is the peculiar velocity.
+Multiplying Eq.~(\ref{eq:kinetic}) by necessary power of velocity and integrating over the whole velocity space, we obtain 
+corresponding mean field balance equations. In a generic form, for any given macroscopic field $F_k(\vec{r},t)$, these balance equations 
+are in the next form:
+\begin{equation}
+	\left\langle\frac{dF_k}{dt}\right\rangle_{convective}=\left\langle\frac{dF_k}{dt}\right\rangle_{collisional}\;,
+\end{equation}
+meaning that convective changes of the field are balanced by the collisional changes. In our first step, we consider only restitutive 
+collisions, meaning that size-distribution function does not change. In this case, due to mass and momentum conservation, the 
+zeroth and first order moment equations have no collisional changes. The second moment equations, i.e. temperature evolution equations,
+give us much more interesting information, since they have non-zero collisional changes. In a generalized form, these equations can be written as:
+\begin{equation}
+	\frac{dT_k}{dt} \propto H_k -A_kT_k+\sum_{i}B_{ki}(T_k-T_i)\;,
+\end{equation}
+where $A_k>0$ is the parameter describing 
 dissipation due to collisions, which depends on size distribution function, collision 
-frequency and restitution. The parameter $B_{ik}=B_{ki}>0$ describes the inter-species 
+frequency and restitution. The parameter $B_{ki}=B_{ik}>0$ describes the inter-species 
 heat flow. This is the main reason why species tend to have different temperatures. 
-$H_i$ is a certain external heating function. If one introduces an external energy pump 
+$H_k$ is a certain external heating function. If one introduces an external energy pump 
 into the system, the temperatures of species don't reach zero, but attain certain 
 stationary and still unique values, balancing the outer heating \cite{Bodrova2014}. 
 
@@ -224,10 +249,10 @@ One caveat of these heating models is that they are all artificial. Our goal
 is to investigate the model with a more realistic heating term, the gravitational 
 shear heating in planetary disks. This heating is in the next form:
 \begin{equation}
-	H_i \propto \nu_i\Omega^2\;,
+	H_k \propto \nu_k\Omega^2\;,
 \end{equation}
 where $\Omega$ is the mean orbital frequency around the considered location of the system,
-and $\nu_i$ is the shear viscosity term. In the case of planetary rings, the viscosity
+and $\nu_k$ is the shear viscosity term. In the case of planetary rings, the viscosity
 term is split into \emph{local} and \emph{non-local} parts $\nu=\nu_l+\nu_{nl}$ 
 \cite{Seiss2011,spahn2006c,Stewart1984}.
 However, these terms are given only for the mono-disperse case. In the case of a gas 
@@ -236,13 +261,6 @@ This is the first goal of our project, to obtain the kinetic transport coefficie
 for each species from the microscopic level of description. 
 By this we mean kinetic description of the system, given a velocity distribution 
 function $f$, its time evolution obeys:
-\begin{equation}
-	\frac{\partial f_i}{\partial t}+\vec{v}\cdot\frac{\partial f_i}{\partial\vec{r}}-
-	-\frac{1}{m_i}\frac{\partial U}{\partial\vec{r}}\frac{\partial f_i}{\partial\vec{v}}=
-	\sum_k\eta_kI(f_i,f_k)\;,
-\end{equation}
-where $I(f_i, f_k)$ is the collision integral and $\eta$ is the size distribution 
-function.
 
 In order to test the theoretical results, we have developed a molecular dynamics (MD) 
 code, simulating granular particles of different sizes in a Hill's box. 
@@ -278,8 +296,10 @@ planet.
 
 \spa
 \section*{B.Table of contents and outline of the thesis with an overview of accomplished (sub-) chapter}
-Please submit your table of contents /outline of your thesis. Please characterize the (sub-)chapter that have already been accomplished. 
-The probability of concluding the project during the funding period  must  be  illustrated.  The awarding committee reserves the right to obtain the stated (sub-) chapter in printed form.
+Please submit your table of contents /outline of your thesis. Please characterize the (sub-)chapter 
+that have already been accomplished. 
+The probability of concluding the project during the funding period must be illustrated. 
+The awarding committee reserves the right to obtain the stated (sub-) chapter in printed form.
 
 %----------------------------------------------------------------------------------------
 %	Working program and intended completion date

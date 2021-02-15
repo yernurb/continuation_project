@@ -1,16 +1,16 @@
 # Fdb version 3
-["bibtex project"] 1613033399 "project.aux" "project.bbl" "project" 1613033400
+["bibtex project"] 1613401130 "project.aux" "project.bbl" "project" 1613401141
   "./apalike.bst" 1613027798 24635 604dafcc79f521a11ea73e506e1fbd98 ""
   "Mergedbib.bib" 1612807541 2157430 15d34100c40f86231c6ded39e819fa65 ""
   "Pape.bib" 1332429420 1779 877eba045b7d33db0009512c2109ab16 ""
-  "project.aux" 1613033399 3968 55ac4eb16fedbf1e4c15edda09ac2e76 "pdflatex"
+  "project.aux" 1613401140 4034 5a4421c1dd53c7a588fd6b2abdf538e4 "pdflatex"
   (generated)
   "project.bbl"
   "project.blg"
-["pdflatex"] 1613033399 "/home/yernur/Documents/LaTeX/continuation_project/Project_YB2/project.tex" "/home/yernur/Documents/LaTeX/continuation_project/Project_YB2/project.pdf" "project" 1613033400
+["pdflatex"] 1613401140 "/home/yernur/Documents/LaTeX/continuation_project/Project_YB2/project.tex" "/home/yernur/Documents/LaTeX/continuation_project/Project_YB2/project.pdf" "project" 1613401141
   "/etc/texmf/web2c/texmf.cnf" 1612872703 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/yernur/Documents/LaTeX/continuation_project/Project_YB2/project.aux" 1613033399 3968 55ac4eb16fedbf1e4c15edda09ac2e76 ""
-  "/home/yernur/Documents/LaTeX/continuation_project/Project_YB2/project.tex" 1613033396 20335 862d212229ebfdf359a4c92e1ac9ec7e ""
+  "/home/yernur/Documents/LaTeX/continuation_project/Project_YB2/project.aux" 1613401140 4034 5a4421c1dd53c7a588fd6b2abdf538e4 ""
+  "/home/yernur/Documents/LaTeX/continuation_project/Project_YB2/project.tex" 1613401139 21830 f71c7eb415622785adbfda5c6698dde5 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm" 1136768653 4484 b828043cbd581d289d955903c1339981 ""
@@ -117,12 +117,12 @@
   "Figures/Strawing.png" 1562232793 2331003 f88092d2632b74b045d373e1f42dff7c ""
   "Figures/energy_evo.png" 1558672676 42072 78999983ef8c3b878d467a5edb4a65f5 ""
   "Figures/sdfa219b.pdf" 1479978545 16331 b0f99708438c41421237e6da59941524 ""
-  "project.aux" 1613033399 3968 55ac4eb16fedbf1e4c15edda09ac2e76 "pdflatex"
-  "project.bbl" 1613033399 5868 41b88d5c8cdacc614743383f67274c7a "bibtex project"
-  "project.tex" 1613033396 20335 862d212229ebfdf359a4c92e1ac9ec7e ""
+  "project.aux" 1613401140 4034 5a4421c1dd53c7a588fd6b2abdf538e4 "pdflatex"
+  "project.bbl" 1613401130 5868 41b88d5c8cdacc614743383f67274c7a "bibtex project"
+  "project.tex" 1613401139 21830 f71c7eb415622785adbfda5c6698dde5 ""
   (generated)
+  "/home/yernur/Documents/LaTeX/continuation_project/Project_YB2/project.pdf"
+  "project.log"
   "project.aux"
   "project.pdf"
-  "/home/yernur/Documents/LaTeX/continuation_project/Project_YB2/project.pdf"
   "/home/yernur/Documents/LaTeX/continuation_project/Project_YB2/project.log"
-  "project.log"
