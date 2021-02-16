@@ -6,36 +6,36 @@ Database file #1: Mergedbib.bib
 Database file #2: Pape.bib
 You've used 23 entries,
             1935 wiz_defined-function locations,
-            716 strings with 8675 characters,
-and the built_in function-call counts, 10032 in all, are:
-= -- 964
-> -- 487
-< -- 8
-+ -- 168
-- -- 166
-* -- 905
-:= -- 1765
+            715 strings with 8657 characters,
+and the built_in function-call counts, 9987 in all, are:
+= -- 963
+> -- 477
+< -- 9
++ -- 166
+- -- 162
+* -- 895
+:= -- 1754
 add.period$ -- 70
 call.type$ -- 23
-change.case$ -- 196
+change.case$ -- 194
 chr.to.int$ -- 23
 cite$ -- 23
 duplicate$ -- 333
 empty$ -- 663
-format.name$ -- 203
-if$ -- 1940
+format.name$ -- 201
+if$ -- 1935
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 24
 newline$ -- 118
 num.names$ -- 71
-pop$ -- 153
+pop$ -- 150
 preamble$ -- 1
-purify$ -- 197
+purify$ -- 195
 quote$ -- 0
-skip$ -- 251
+skip$ -- 252
 stack$ -- 0
-substring$ -- 733
+substring$ -- 738
 swap$ -- 32
 text.length$ -- 1
 text.prefix$ -- 0

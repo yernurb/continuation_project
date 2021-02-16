@@ -20,6 +20,7 @@
 \usepackage[normalem]{ulem}
 %\usepackage{subcaption}
 \usepackage{leading}
+\usepackage{pgfgantt}
 
 \usepackage{amsfonts, amsmath, amsthm, amssymb} % For math fonts, symbols and environments
 \usepackage{graphicx} % Required for including images
@@ -196,7 +197,7 @@ of the mass-classes.}. A splitting up of an universal temperature into a mass-de
 has been found as an expression of the non-equilibrium character of the undisturbed multi-disperse sheared granular gas!
 
 In the planned project, we will analyze the stability of that steady state under external perturbations in order to understand the
-cluster formation, and thus, to complete the goals of my PhD-thesis!\\
+cluster formation, and thus, to complete the goals of my Ph.D.-thesis.\\
 
 \subsection*{Scientific Objectives}
 Unlike molecular gases, a granular gas is always subject to collisional dissipation of inner 
@@ -227,10 +228,11 @@ where $\rho_k=m_kn_k$ is the mass density, $\vec{u}$ is the mean velocity and $\
 Multiplying Eq.~(\ref{eq:kinetic}) by necessary power of velocity and integrating over the whole velocity space, we obtain 
 corresponding mean field balance equations. In a generic form, for any given macroscopic field $F_k(\vec{r},t)$, these balance equations 
 are in the next form:
-\begin{equation}
+\begin{equation}\label{eq:balance}
 	\left\langle\frac{dF_k}{dt}\right\rangle_{convective}=\left\langle\frac{dF_k}{dt}\right\rangle_{collisional}\;,
 \end{equation}
-meaning that convective changes of the field are balanced by the collisional changes. In our first step, we consider only restitutive 
+meaning that convective changes of the field are balanced by the collisional changes. Angular brackets denote an average over 
+the velocity space. In our first step, we consider only restitutive 
 collisions, meaning that size-distribution function does not change. In this case, due to mass and momentum conservation, the 
 zeroth and first order moment equations have no collisional changes. The second moment equations, i.e. temperature evolution equations,
 give us much more interesting information, since they have non-zero collisional changes. In a generalized form, these equations can be written as:
@@ -243,24 +245,22 @@ frequency and restitution. The parameter $B_{ki}=B_{ik}>0$ describes the inter-s
 heat flow. This is the main reason why species tend to have different temperatures. 
 $H_k$ is a certain external heating function. If one introduces an external energy pump 
 into the system, the temperatures of species don't reach zero, but attain certain 
-stationary and still unique values, balancing the outer heating \cite{Bodrova2014}. 
+stationary and still unique values, balancing the outer heating \citep{Bodrova2014}. 
 
 One caveat of these heating models is that they are all artificial. Our goal 
-is to investigate the model with a more realistic heating term, the gravitational 
-shear heating in planetary disks. This heating is in the next form:
+is to investigate the model with a more realistic heating term, by including an appropriate potential $U(r)$ 
+in Eq.~(\ref{eq:kinetic}). Such a heating is known to be in the next form:
 \begin{equation}
 	H_k \propto \nu_k\Omega^2\;,
 \end{equation}
 where $\Omega$ is the mean orbital frequency around the considered location of the system,
 and $\nu_k$ is the shear viscosity term. In the case of planetary rings, the viscosity
 term is split into \emph{local} and \emph{non-local} parts $\nu=\nu_l+\nu_{nl}$ 
-\cite{Seiss2011,spahn2006c,Stewart1984}.
+\citep{Seiss2011,spahn2006c,Stewart1984}.
 However, these terms are given only for the mono-disperse case. In the case of a gas 
 with different species, we need to know the viscosity terms for each species. 
 This is the first goal of our project, to obtain the kinetic transport coefficients
 for each species from the microscopic level of description. 
-By this we mean kinetic description of the system, given a velocity distribution 
-function $f$, its time evolution obeys:
 
 In order to test the theoretical results, we have developed a molecular dynamics (MD) 
 code, simulating granular particles of different sizes in a Hill's box. 
@@ -272,23 +272,33 @@ code, simulating granular particles of different sizes in a Hill's box.
 	\label{fig2}
 \end{figure}
 
-Next, we would like to address the reasons for size distribution in Saturn's rings. 
-From experimental evidence, we that the size distribution obeys a power
-law with a cut-off at the end [size-distribution tail original works]. There are several attempts
-to model this phenomenon \cite{Brilliantov2013,spahn2014}. All of them assume a certain interplay between
-two driving processes, aggregation or coagulation process when particles merge, producing 
-larger particles, and fragmentation process, when particles
-fracture after collision producing smaller constituents. A natural step for us would be 
-to analyze the kinetic equations describing the behavior of the system with inclusion 
-of aggregation and fragmentation processes.
+These temperature separation effects are most interesting to investigate if we allow the size-distribution
+to change due to collisions, e.g. including coagulation and fragmentation processes. This is done by introduction
+of specific coagulation and fragmentation kernels into the collision integrals. The main difference here is 
+that together with the temperature evolution equations, we have to consider the size-distribution evolution equations,
+since their collisional part (Eq.~\ref{eq:balance}) does not vanish anymore. In a generic form we have to analyze a
+system of equations of the next form:
+\begin{equation}\label{eq:temperatue_size_balance}
+	\begin{split}
+		\left\langle\frac{dn_k}{Dt}\right\rangle_{convective} &= \left\langle\frac{dn_k}{dt}\right\rangle_{gain}-\left\langle\frac{dn_k}{dt}\right\rangle_{loss}\;,\\
+		\left\langle\frac{dT_k}{Dt}\right\rangle_{convective} &= \left\langle\frac{dT_k}{dt}\right\rangle_{gain}-\left\langle\frac{dT_k}{dt}\right\rangle_{loss}\;,
+	\end{split}
+\end{equation}
+where we specifically separated the collisional gain and loss terms. The gain term in $n_k$ is the contribution of coagulation
+processes, and loss term in $n_k$ is the contribution of fragmentation processes. Purely restitutive collisions do not 
+contribute into the change of size-DF. In the second set of equations, the natural dissipation of granular gases obviously 
+contribute to the loss term in $T_k$. However, this time we need to consider change of temperatures due to change in concentration
+of particles. Mainly, the change of concentration affects the collision frequencies of constituents, which in tern leads to 
+faster/slower temperature decay. On the other hand, the separation of temperatures affects the mobilities of particles, which in 
+tern lead to larger/smaller aggregates. In our previous work \citep{baibolatov2012}, we have estimated the most probable 
+size of an aggregate for given temperatures of a granular gas, showing that different temperatures lead to different sizes of 
+aggregates.
 
-Such an interplay and balance of three different processes, one being separation of 
-temperatures of species, second being the gravitational heating and third 
-being the recombination of particles which lead to dynamical change of size distribution,
-is already quite interesting. Hence, an external influence, such as periodic 
-driving force acting upon the system should lead to various fascinating phenomena.
-In planetary systems, such periodic driving forces are resonances with the moons of the 
-planet.
+As a next step, we are planning to analyze the system Eq.~(\ref{eq:temperatue_size_balance}) under influence of expternal
+periodic perturbations from moon resonances. This effect can be described as a contribution to the gain term of $T_k$ 
+of a cyclic heating profile. 
+
+\textbf{A little more meat about external kicks and stability analysis}
 
 %----------------------------------------------------------------------------------------
 %	Table of contents and outline of the thesis with an overview of accomplished (sub-) chapter
@@ -296,10 +306,71 @@ planet.
 
 \spa
 \section*{B.Table of contents and outline of the thesis with an overview of accomplished (sub-) chapter}
-Please submit your table of contents /outline of your thesis. Please characterize the (sub-)chapter 
-that have already been accomplished. 
-The probability of concluding the project during the funding period must be illustrated. 
-The awarding committee reserves the right to obtain the stated (sub-) chapter in printed form.
+Table of contents of the PhD thesis (subject to minor changes):
+\begin{enumerate}
+	\item \textbf{Introcution}
+	
+		State of the Art description of the problem
+	
+	\item \textbf{Breakage of energy equipartition in planetary rings}
+	
+		2.1 Hill equations
+
+		2.2 Contact mechanics of binary collisions
+
+		2.3 Enskog-Boltzmann kinetic equations
+
+		2.4 Local and nonlocal split of collision integrals 
+
+		2.5 Hydrodynamic approximation and mean field equations
+
+		2.6 Transport coefficients
+
+		2.7 Maxwellian distribution assumption and temperature evolution equations
+
+		2.8 Numerical simulations
+
+	\item \textbf{Aggregation and fragmentation processes}
+	
+		3.1 Adhesive contact forces 
+
+		3.2 Equilibrium model of aggregate formation 
+
+		3.3 Aggregation and fragmentaion kernels of collision integrals 
+
+		3.4 Mean field balance equations
+
+		3.5 Analysis of the mean field equations
+
+		3.6 Numerical simulations
+
+	\item \textbf{Periodic moon perturbations}
+	
+		4.1 2:1 resonances with Mimas 
+
+		4.2 Effects of perturbations on temperatures
+
+		4.3 Perturbed mean field equations
+
+		4.4 Solutions of mean field equations and stability analysis
+
+		4.5 Numerical simulations
+
+	\item \textbf{Conclusions}
+
+		Final thoughts and outline of the work 
+
+	\item \textbf{Appendix}
+
+		A.1 Overview of the numerial simulation methods
+
+		A.2 and further will be devoted to tedious calculations
+	
+\end{enumerate}
+
+The second chapter of the thesis, is almost complete. The third chapter is complete up to the point where mean field 
+balance equations are derived and further analyzed. Chapter four is planned to be accomplished during the period of the project.
+
 
 %----------------------------------------------------------------------------------------
 %	Working program and intended completion date
@@ -307,6 +378,60 @@ The awarding committee reserves the right to obtain the stated (sub-) chapter in
 
 \newpage
 \section*{C. Working program and intended completion date}
+
+\begin{ganttchart}[%Specs
+	expand chart = \textwidth,
+	y unit title=0.5cm,
+	y unit chart=0.7cm,
+	vgrid,hgrid,
+	title height=1,
+%     title/.style={fill=none},
+	title label font=\bfseries\footnotesize,
+	bar/.style={fill=blue},
+	bar height=0.7,
+%   progress label text={},
+	group right shift=0,
+	group top shift=0.7,
+	group height=.3,
+	group peaks width={0.2},
+	inline]{1}{12}
+   %labels
+   \gantttitle{Time schedule}{12}\\  % title 1
+   \gantttitle[]{Apr 2021}{2}
+   \gantttitle[]{Mai 2021}{2}
+   \gantttitle[]{Jun 2021}{2}
+   \gantttitle[]{Jul 2021}{2}
+   \gantttitle[]{Aug 2021}{2} 
+   \gantttitle[]{Sep 2021}{2}\\                 
+   % Setting group if any
+   \ganttgroup[inline=false]{Chapter 2}{1}{3}\\ 
+   \ganttbar[progress=60,inline=false]{Transport coefficients}{1}{2}\\
+   
+   \ganttgroup[inline=false]{Chapter 3}{3}{6}\\ 
+   \ganttbar[progress=30,inline=false]{Mean field balance equations}{3}{4}\\
+   \ganttbar[progress=0,inline=false]{Analysis of the mean field equations}{4}{6}\\
+   \ganttbar[progress=30,inline=false]{Preparation for an article}{3}{6}\\
+
+   \ganttgroup[inline=false]{Chapter 4}{6}{9}\\ 
+   \ganttbar[progress=5,inline=false]{Effects of perturbations}{6}{7}\\
+   \ganttbar[progress=5,inline=false]{Perturbed mean field equations}{7}{8}\\
+   \ganttbar[progress=0,inline=false]{Solutions and stability analysis}{7}{9}\\
+   \ganttbar[progress=5,inline=false]{Preparation for an article}{7}{11}\\
+   \ganttbar[progress=30,inline=false]{Work on thesis}{1}{12}\\
+   
+\end{ganttchart}
+
+In the chart above, the planned work on thesis and articles is shown. Obvioulsly, the completion percentages of each task are 
+only rough estimates, however they seem to be realistic. As shown in the chart, the planned completion time is at September 2021,
+however I kindly ask the commitee to take into account the global COVID-19 pandemic events, and consider the shift of the project 
+by few months. The main reason is that it might be problematic to get my residence permit in Germany during the time-period 
+shown in the timeline of the project.
+
+Our work is purely theoretical, and we do not plan to perform any experiments. The main \emph{validity check experiments} 
+we do, are numerical simulations using molecular dynamics methods. 
+
+\textbf{Something about our planned approach to the problems}
+
 \begin{itemize}
     \item Working-Program, time schedule (max. 4 pages)Detailed information about your planned approach, especially a thorough explanation of the meth-odology, 
 	that you will apply in the completion phase of your  PhD. A time schedule (e. g. in graphic or  tabular  form)  for  the  period  of  

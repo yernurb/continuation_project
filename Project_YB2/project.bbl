@@ -1,5 +1,10 @@
 \begin{thebibliography}{}
 
+\bibitem[{Baibolatov} and {Spahn}, 2012]{baibolatov2012}
+{Baibolatov}, Y. and {Spahn}, F. (2012).
+\newblock The role of adhesion for ensembles of mesoscopic particles.
+\newblock {\em Gran. Matt.}, 14:197--202.
+
 \bibitem[{Bodrova} et~al., 2014]{Bodrova2014}
 {Bodrova}, A., {Levchenko}, D., and {Brilliantov}, N. (2014).
 \newblock {Universality of temperature distribution in granular gas mixtures
@@ -10,12 +15,6 @@
 {Brilliantov}, N.~V., {Albers}, N., {Spahn}, F., and {P{\"o}schel}, T. (2007).
 \newblock {Collision dynamics of granular particles with adhesion}.
 \newblock {\em Phys. Rev. E}, 76(5):051302.
-
-\bibitem[{Brilliantov} et~al., 2013]{Brilliantov2013}
-{Brilliantov}, N.~V., {Albers}, N., {Spahn}, F., and {P{\"o}schel}, T. (2013).
-\newblock {Erratum: Collision dynamics of granular particles with adhesion
-  [Phys. Rev. E 76, 051302 (2007)]}.
-\newblock {\em pre}, 87(3):039904.
 
 \bibitem[{Brilliantov} et~al., 2015]{Brilliantov2015}
 {Brilliantov}, N.~V., {Krapivsky}, P.~L., {Bodrova}, A., {Spahn}, F.,
