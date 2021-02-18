@@ -1,0 +1,9 @@
+\ProvidesFile{sender.lco}[2017/11/01 Custom Sender Information (Jan Mattfeld)]
+%
+\newcommand{\mFirstname}{Yernur}
+\newcommand{\mLastname}{Baibolatov}
+\newcommand{\mStreet}{Brusilovsky str. 159}
+\newcommand{\mPostalcode}{050000}
+\newcommand{\mCity}{Almaty}
+\newcommand{\mPhone}{+8~707~4632528}
+\newcommand{\mEmail}{yernurb@gmail.com}
